@@ -240,6 +240,56 @@ h3{
     }
 }
 
+/*formulario*/
+
+form{
+    margin-left: 350px;
+    margin-top: 300px;
+    display: block;
+}
+
+.col1{
+    margin-top: -20px;
+}
+
+.col2{
+    margin-top: 10px;
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: solid 3px rgb(43, 0, 128);
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    background: linear-gradient(to top left, rgb(235, 244, 240), white);
+}
+
+button{
+    width: 100px;
+    height: 45px;
+    border: solid 3px rgb(43, 0, 128);
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    background: linear-gradient(to top left, rgb(4, 249, 77), white);
+
+}
+
+button:hover{
+    background: linear-gradient(to top left, rgb(208, 249, 4), white);
+}
+
+label{
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: cursive;
+}
 /*clone
 
 .container3{
