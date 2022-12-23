@@ -1,5 +1,16 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
+
+
+.container2{
+    width: 400px;
+    height: 400px;
+    grid-area: auto;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 100%;
+}
+
 .container{
     width: 200px;
     height: 500px;
@@ -10,22 +21,12 @@
 
 }
 
-.container2{
-    width: 400px;
-    height: 400px;
-    background-color: rgb(31, 134, 160);
-    grid-area: auto;
-    margin: auto;
-    margin-top: 50px;
-}
-
 #arvore{
     clip-path: polygon(
         20% 80%,
         80% 80%,
         50% 40%
     );
-    box-shadow: 10px 3px;
 }
 
 .tronco{
@@ -34,4 +35,116 @@
     background-color: brown;
     margin-left: 190px;
     margin-top: -100px;
+    box-shadow: 3px 1px brown;
 }
+
+.maca{
+    width: 10px;
+    height: 10px;
+    margin-top: -230px;
+    margin-left: 180px;
+    border-radius: 50%;
+    box-shadow:
+        10px -5px red,
+        28px 20px blue,
+        15px 110px gold,
+        -5px 70px blue,
+        45px 115px brown,
+        -20px 125px silver,
+        30px 65px white;
+    opacity: 90%;
+    animation: troca-cor 3s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes troca-cor {
+    30%{
+        background-color: greenyellow;
+        box-shadow:
+        10px -5px rgb(139, 63, 63),
+        28px 20px rgb(34, 34, 75),
+        15px 110px rgb(94, 86, 40),
+        -5px 70px blue,
+        45px 115px rgb(187, 80, 80),
+        -20px 125px rgb(192, 192, 192),
+        30px 65px rgb(185, 116, 116);
+    }
+    60%{
+        background-color: rgb(120, 190, 14);
+        box-shadow:
+        10px -5px rgb(63, 102, 139),
+        28px 20px rgb(100, 202, 97),
+        15px 110px rgb(94, 86, 40),
+        -5px 70px rgb(187, 255, 0),
+        45px 115px rgb(207, 156, 156),
+        -20px 125px rgb(138, 74, 74),
+        30px 65px rgb(128, 49, 49);
+    }
+    100%{
+        background-color: green;
+    }
+}   
+
+.doce{
+    width: 5%;
+    margin-top: -11px;
+    margin-left: 180px;
+    font-size: 40px;
+    font-family: cursive;
+    color: rgb(212, 123, 21);
+    border-radius: 40%;
+    rotate: 220deg;
+    
+}
+
+.doce2{
+    width: 5%;
+    margin-top: 40px;
+    margin-left: 160px;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(21, 212, 132);
+    border-radius: 40%;
+    rotate: 160deg;
+    
+}
+
+.doce3{
+    width: 5%;
+    margin-top: -60px;
+    margin-left: 210px;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(192, 25, 13);
+    border-radius: 40%;
+    rotate: 200deg;
+    
+}
+
+/*clone
+
+.container3{
+    width: 200px;
+    height: 500px;
+    background-color: green;
+    margin-top: -490px;
+
+}
+
+#arvore3{
+    clip-path: polygon(
+        20% 80%,
+        80% 80%,
+        50% 40%
+    );
+    margin-left: 230px;
+}
+
+.tronco3{
+    width: 20px;
+    height: 90px;
+    background-color: brown;
+    margin-left: 310px;
+    margin-top: -100px;
+}
+*/
