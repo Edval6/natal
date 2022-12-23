@@ -3,21 +3,21 @@
 
 
 .container2{
-    width: 400px;
+    width: auto;
     height: 400px;
-    grid-area: auto;
-    margin: auto;
-    margin-top: 50px;
-    opacity: 100%;
+    margin-left: -70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .container{
     width: 200px;
     height: 500px;
     background-color: green;
-    grid-area: auto;
-    margin: auto;
-    margin-top: 50px;
+    margin-left: -270px;
+    margin-top: -85px;
 
 }
 
@@ -33,8 +33,8 @@
     width: 20px;
     height: 90px;
     background-color: brown;
-    margin-left: 190px;
-    margin-top: -100px;
+    margin-left: 1090px;
+    margin-top: -85px;
     box-shadow: 3px 1px brown;
 }
 
@@ -42,10 +42,10 @@
     width: 10px;
     height: 10px;
     margin-top: -230px;
-    margin-left: 180px;
+    margin-left: 1085px;
     border-radius: 50%;
     box-shadow:
-        10px -5px red,
+        10px -5px white,
         2px 30px goldenrod,
         28px 20px blue,
         15px 110px gold,
@@ -120,6 +120,92 @@
     rotate: 200deg;
     
 }
+
+/*Mural*/
+
+.mural{
+    width: 750px;
+    height: 300px;
+    background: linear-gradient(to bottom right, rgb(8, 4, 71), rgb(20, 13, 61), rgb(49, 0, 68) );
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+ /* animacao com estrelas*/
+ .estrelas1{
+    position: relative;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    100px 80px white,
+    150px 120px white,
+    250px 50px white,
+    350px 90px white,
+    400px 30px white,
+    450px 120px white,
+    500px 20px white,
+    630px 120px white,
+    580px 140px white,
+    610px 90px white,
+    550px 70px white,
+    620px 30px white,
+    600px 150px white;
+    animation: anim-estrelas1 40s linear infinite;
+    opacity: 20%;
+  }
+ 
+  @keyframes anim-estrelas1{
+    from{
+       transform: translateY(0px);
+    }
+  }
+
+  
+ .estrelas{
+    position: relative;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    100px 80px white,
+    150px 120px white,
+    250px 50px white,
+    350px 90px white,
+    400px 30px white,
+    450px 120px white,
+    500px 20px white,
+    630px 120px white,
+    580px 140px white,
+    610px 90px white,
+    550px 70px white,
+    620px 30px white,
+    600px 150px white;
+
+    animation: anim-estrelas 10s linear infinite;
+    animation-delay: 3s;
+  }
+ 
+  .estrelas::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+
+  }
+ 
+  @keyframes anim-estrelas{
+    from{
+       transform: translateY(0px);
+    }
+    to{
+       transform: translateY(200px);
+    }
+  }
+ 
+  /*fim da animacao*/
 
 /*clone
 
