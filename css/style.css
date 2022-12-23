@@ -46,6 +46,7 @@
     border-radius: 50%;
     box-shadow:
         10px -5px red,
+        2px 30px goldenrod,
         28px 20px blue,
         15px 110px gold,
         -5px 70px blue,
@@ -59,9 +60,9 @@
 
 @keyframes troca-cor {
     30%{
-        background-color: greenyellow;
         box-shadow:
         10px -5px rgb(139, 63, 63),
+        2px 30px rgb(138, 102, 13),
         28px 20px rgb(34, 34, 75),
         15px 110px rgb(94, 86, 40),
         -5px 70px blue,
@@ -70,18 +71,15 @@
         30px 65px rgb(185, 116, 116);
     }
     60%{
-        background-color: rgb(120, 190, 14);
         box-shadow:
         10px -5px rgb(63, 102, 139),
+        2px 30px rgb(218, 60, 32),
         28px 20px rgb(100, 202, 97),
         15px 110px rgb(94, 86, 40),
         -5px 70px rgb(187, 255, 0),
         45px 115px rgb(207, 156, 156),
         -20px 125px rgb(138, 74, 74),
         30px 65px rgb(128, 49, 49);
-    }
-    100%{
-        background-color: green;
     }
 }   
 
@@ -94,6 +92,7 @@
     color: rgb(212, 123, 21);
     border-radius: 40%;
     rotate: 220deg;
+
     
 }
 
@@ -106,6 +105,7 @@
     color: rgb(21, 212, 132);
     border-radius: 40%;
     rotate: 160deg;
+
     
 }
 
