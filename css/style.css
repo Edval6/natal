@@ -205,6 +205,10 @@
        transform: translateY(200px);
     }
   }
+
+  .estrelasBody{
+    display: none;
+  }
  
   /*fim da animacao*/
 
@@ -318,6 +322,78 @@ form{
     font-weight: 400;
     font-family: cursive;
 }
+
+@media only screen and (max-device-width: 900px){
+
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+
+      @keyframes anim-estrelas{
+        from{
+           transform: translateY(0px);
+        }
+        to{
+           transform: translateY(100px);
+        }
+      }
+
+    .mural{
+        margin-top: 0px;
+        margin-left: -5px;
+    }
+
+    .container{
+        display: none;
+        margin-top: 150px;
+        margin-left: -480px;
+    }
+
+    .tronco{
+        display: none;
+        margin-left: 200px;
+        margin-top: 140px;
+    }
+
+    .maca{
+        display: none;
+        margin-top: -230px;
+        margin-left: 191px;
+    }
+
+    .col1{
+        display: none;
+    }
+
+    .col2{
+        margin-left: -340px;
+        margin-top: -340px;
+        flex-direction: column;
+    }
+
+    #label1{
+        margin-left: -300px;
+    }
+
+    #label2{
+        margin-left: -200px;
+    }
+
+    #nom{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    #btn{
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    #mensagem{
+        width: 250px;
+    }
+}
+
 /*clone
 
 .container3{
