@@ -125,10 +125,12 @@
 
 .mural{
     width: 750px;
+    max-width: 750px;
     height: 300px;
     background: linear-gradient(to bottom right, rgb(8, 4, 71), rgb(20, 13, 61), rgb(49, 0, 68) );
     margin-top: 100px;
     margin-left: 100px;
+    overflow-y: auto;
 }
 
  /* animacao com estrelas*/
@@ -214,7 +216,7 @@
 
   /* textos*/
 h1{
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 30px;
     font-family: cursive;
     font-size: 35px;
@@ -223,7 +225,7 @@ h1{
 }
 
 h3{
-    margin-left: 250px;
+    margin-left: 50px;
     margin-top: 60px;
     font-family: cursive;
     font-size: 35px;
@@ -248,7 +250,7 @@ h3{
 
 form{
     margin-left: 350px;
-    margin-top: 300px;
+    margin-top: 280px;
     display: block;
 }
 
@@ -323,10 +325,81 @@ form{
     font-family: cursive;
 }
 
+.col-cor{
+    width: 300px;
+    height: 50px;
+    max-width: 300px;
+    max-height: 200px;
+    margin-left: 200px;
+    margin-top: 5px;
+    display: block;
+}
+
+p{
+    margin-left: 215px;
+    margin-top: 20px;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.cima{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+.baixo{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+#red{
+    width: 30%;
+    background-color: red;
+}
+
+#indigo{
+    width: 30%;
+    background-color: indigo;
+}
+#black{
+    width: 30%;
+    background-color: black;
+}
+#blue{
+    width: 30%;
+    background-color: blue;
+}
+#green{
+    width: 30%;
+    background-color: green;
+}
+#orange{
+    width: 30%;
+    background-color: orange;
+}
+
 @media only screen and (max-device-width: 900px){
 
-    body{
-        background-color: rgb(255, 0, 0);
+    form{
+        margin-top: 480px;
+    }
+
+    .col-cor{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    p{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    h3{
+        margin-left: 90px;
     }
 
       @keyframes anim-estrelas{
@@ -339,8 +412,11 @@ form{
       }
 
     .mural{
+        height: 500px;
         margin-top: 0px;
-        margin-left: -5px;
+        margin-left: 0px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .container{
