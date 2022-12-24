@@ -107,8 +107,8 @@ orange.onclick = function(){
     h3.style.textShadow = "2px 2px #400a0a";
 }
 
- // screenshot
- function takeshot() {
+// screenshot
+function takeshot() {
     let div = document.getElementById('tela');
 
     var btnTela = document.querySelector("#btn-tela");
@@ -116,6 +116,9 @@ orange.onclick = function(){
 
     html2canvas(div).then(
         function (canvas) {
+
+            var h2 = document.querySelector("h2");
+            h2.style.display = "block";
             document.getElementById('resultado').appendChild(canvas);
         })
 }

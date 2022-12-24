@@ -328,8 +328,12 @@ form{
 }
 
 #resultado{
+    max-width: 500px;
     margin-left: 190px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #label1{
@@ -403,11 +407,20 @@ p{
     background-color: orange;
 }
 
+h2{
+    display: none;
+    font-size: 18px;
+    margin-top: 50px;
+    color: rgb(75, 73, 73);
+    opacity: 60%;
+}
+
 @media only screen and (max-device-width: 900px){
 
     #btn-tela{
         margin-left: 130px;
         margin-top: -160px;
+        display: none;
     }
 
     #resultado{
