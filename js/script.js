@@ -106,3 +106,16 @@ orange.onclick = function(){
     h3.style.color = "white";
     h3.style.textShadow = "2px 2px #400a0a";
 }
+
+ // screenshot
+ function takeshot() {
+    let div = document.getElementById('tela');
+
+    var btnTela = document.querySelector("#btn-tela");
+    btnTela.style.backgroundColor = "orange";
+
+    html2canvas(div).then(
+        function (canvas) {
+            document.getElementById('resultado').appendChild(canvas);
+        })
+}

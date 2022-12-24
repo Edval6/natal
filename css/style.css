@@ -33,7 +33,7 @@
     width: 20px;
     height: 90px;
     background-color: brown;
-    margin-left: 1090px;
+    margin-left: 1080px;
     margin-top: -85px;
     box-shadow: 3px 1px brown;
 }
@@ -42,7 +42,7 @@
     width: 10px;
     height: 10px;
     margin-top: -230px;
-    margin-left: 1085px;
+    margin-left: 1075px;
     border-radius: 50%;
     box-shadow:
         10px -5px white,
@@ -311,6 +311,27 @@ form{
     background: linear-gradient(to top left, rgb(208, 249, 4), white);
 }
 
+#btn-tela{
+    width: 100px;
+    height: 45px;
+    margin-left: 500px;
+    margin-top: -40px;
+    border: solid 3px rgb(43, 0, 128);
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 10px;
+    background: linear-gradient(to top left, rgb(4, 249, 77), white);
+
+}
+
+#resultado{
+    margin-left: 190px;
+    margin-top: 40px;
+}
+
 #label1{
     margin-left: -140px;
     font-size: 18px;
@@ -383,6 +404,18 @@ p{
 }
 
 @media only screen and (max-device-width: 900px){
+
+    #btn-tela{
+        margin-left: 130px;
+        margin-top: -160px;
+    }
+
+    #resultado{
+        margin-left: 0px;
+        margin-top: 120px;
+        width: 200px;
+        max-width: 200px;
+    }
 
     form{
         margin-top: 480px;

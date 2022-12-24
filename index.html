@@ -14,7 +14,7 @@
         
         <div class="container2">
 
-            <div class="mural">
+            <div class="mural" id="tela">
                 <div class="estrelas1"></div>
                 <h1>Feliz Natal e Prospero Ano Novo</h1>
                 <h3>Edival Tembe</h3>
@@ -58,8 +58,16 @@
             </div>
         </div>
 
+        <div id="btn-tela" onclick="takeshot()">screenshot</div>
+        
+        <div id="resultado"></div>
     </main>
 
+<!-- Include from the CDN -->
+  <script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+  </script>
+<!--Meu script-->
 <script src="js/script.js"></script>
 </body>
 </html>
